@@ -1,0 +1,134 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    user-select: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F1E2E2;
+}
+
+.heading {
+    background-color: #6ec9ed;
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.themes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.style-1, .style-2, .style-3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 20px;
+    transition: 0.1s;
+}
+
+.style-1 { background-image: url(img/stone.jpg.jpeg); }
+.style-2 { background-image: url(img/paper.jpg.jpeg); }
+.style-3 { background-image: url(img/scissor.jpg.jpeg); }
+
+.style-1:hover, .style-2:hover, .style-3:hover {
+    border: 5px solid white;
+}
+
+.result {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sub-rel {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 20px;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.current {
+    margin: 20px;
+    padding: 10px 30px;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bothChoise {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.usr-cho, .comp-cho {
+    margin: 10px;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    background-color: lightpink;
+}
+
+@media (max-width: 768px) {
+
+    .heading{
+        font-size: xx-large;
+    }
+
+    .style-1, .style-2, .style-3 {
+        width: 120px;
+        height: 120px;
+        margin: 15px;
+    }
+    
+    .usr-cho, .comp-cho {
+        min-width: 150px;
+        padding: 10px 20px;
+    }
+    
+    .current {
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading{
+        font-size: x-large;
+    }
+
+    .style-1, .style-2, .style-3 {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+    }
+    
+    .usr-cho, .comp-cho {
+        min-width: 100%;
+    }
+
+    .current{
+        text-align: center;
+    }
+}
