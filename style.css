@@ -36,9 +36,9 @@ body {
     transition: 0.1s;
 }
 
-.style-1 { background-image: url(img/stone.jpg.jpeg); }
-.style-2 { background-image: url(img/paper.jpg.jpeg); }
-.style-3 { background-image: url(img/scissor.jpg.jpeg); }
+.style-1 { background-image: url(stone.jpg.jpeg); }
+.style-2 { background-image: url(paper.jpg.jpeg); }
+.style-3 { background-image: url(scissor.jpg.jpeg); }
 
 .style-1:hover, .style-2:hover, .style-3:hover {
     border: 5px solid white;
@@ -132,3 +132,4 @@ body {
         text-align: center;
     }
 }
+
