@@ -19,7 +19,7 @@ function startGame(userChoice) {
 
     document.querySelector(".usr-cho").innerText = `User choose : ${userChoice}`;
 
-    document.querySelector(".comp-cho").innerText = `User choose : ${compChoice}`;
+    document.querySelector(".comp-cho").innerText = `Computer choose : ${compChoice}`;
     
 
     if (compChoice === userChoice) {
@@ -43,6 +43,7 @@ function startGame(userChoice) {
     document.querySelector(".count-2").innerText = compScore;
     
 }
+
 
 
 
